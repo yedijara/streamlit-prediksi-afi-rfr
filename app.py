@@ -76,6 +76,10 @@ st.subheader("Hasil Prediksi")
 st.markdown(f"📊 Prediksi Skor AFI Baru: **{prediksi_afi:.4f}**")
 st.markdown(f"🧮 Selisih dengan skor awal: **{selisih:+.4f}**")
 
+# Tampilkan seluruh data sebagai referensi (opsional)
+with st.expander("Lihat Tabel Data AFI Seluruh Daerah"):
+    st.dataframe(df)
+    
 st.markdown("---")
 st.subheader("Peta AFI dan UFI")
 st.markdown("[🗺️ Klik disini untuk membuka peta](https://yedijara.github.io/peta-afi-ufi/)", unsafe_allow_html=True)
